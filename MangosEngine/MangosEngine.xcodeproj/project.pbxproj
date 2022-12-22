@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF56F8992948032900115F1D /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF56F8982948032900115F1D /* libglfw.3.3.dylib */; };
+		FF56F89D2948034100115F1D /* libvulkan.1.3.237.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF56F89C2948034100115F1D /* libvulkan.1.3.237.dylib */; };
+		FF56F89F2948035800115F1D /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF56F8982948032900115F1D /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FF56F8A02948035B00115F1D /* libvulkan.1.3.237.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF56F89C2948034100115F1D /* libvulkan.1.3.237.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FFD61459294D096300DE863B /* mgo_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD61457294D096300DE863B /* mgo_window.cpp */; };
+		FFD6145B294D0A1600DE863B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD6145A294D0A1600DE863B /* main.cpp */; };
+		FFD61465294FCCDF00DE863B /* mgo_instance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD6145C294DD6A100DE863B /* mgo_instance.cpp */; };
+		FFD61466294FCCE100DE863B /* mgo_messenger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD61462294F89E900DE863B /* mgo_messenger.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF56F88B2948031000115F1D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF56F8A02948035B00115F1D /* libvulkan.1.3.237.dylib in CopyFiles */,
+				FF56F89F2948035800115F1D /* libglfw.3.3.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF56F88D2948031000115F1D /* MangosEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MangosEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF56F8982948032900115F1D /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		FF56F89C2948034100115F1D /* libvulkan.1.3.237.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.3.237.dylib; path = "../../../../../opt/homebrew/Cellar/vulkan-loader/1.3.237/lib/libvulkan.1.3.237.dylib"; sourceTree = "<group>"; };
+		FFD61457294D096300DE863B /* mgo_window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mgo_window.cpp; sourceTree = "<group>"; };
+		FFD61458294D096300DE863B /* mgo_window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mgo_window.hpp; sourceTree = "<group>"; };
+		FFD6145A294D0A1600DE863B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FFD6145C294DD6A100DE863B /* mgo_instance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mgo_instance.cpp; sourceTree = "<group>"; };
+		FFD6145D294DD6A100DE863B /* mgo_instance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mgo_instance.hpp; sourceTree = "<group>"; };
+		FFD61462294F89E900DE863B /* mgo_messenger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mgo_messenger.cpp; sourceTree = "<group>"; };
+		FFD61463294F89E900DE863B /* mgo_messenger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mgo_messenger.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF56F88A2948031000115F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF56F8992948032900115F1D /* libglfw.3.3.dylib in Frameworks */,
+				FF56F89D2948034100115F1D /* libvulkan.1.3.237.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF56F8842948031000115F1D = {
+			isa = PBXGroup;
+			children = (
+				FF56F88F2948031000115F1D /* MangosEngine */,
+				FF56F88E2948031000115F1D /* Products */,
+				FF56F8972948032900115F1D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF56F88E2948031000115F1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF56F88D2948031000115F1D /* MangosEngine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF56F88F2948031000115F1D /* MangosEngine */ = {
+			isa = PBXGroup;
+			children = (
+				FFD6144E294D07A400DE863B /* data */,
+				FFD6144B294CFCC800DE863B /* bin */,
+				FFD6144A294CFCC200DE863B /* scr */,
+			);
+			path = MangosEngine;
+			sourceTree = "<group>";
+		};
+		FF56F8972948032900115F1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF56F89C2948034100115F1D /* libvulkan.1.3.237.dylib */,
+				FF56F8982948032900115F1D /* libglfw.3.3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFD6144A294CFCC200DE863B /* scr */ = {
+			isa = PBXGroup;
+			children = (
+				FFD61455294D091500DE863B /* lib */,
+				FFD61456294D091B00DE863B /* include */,
+				FFD61453294D083700DE863B /* glsl */,
+			);
+			path = scr;
+			sourceTree = "<group>";
+		};
+		FFD6144B294CFCC800DE863B /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				FFD6144F294D07D700DE863B /* spir-v */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		FFD6144E294D07A400DE863B /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FFD6144F294D07D700DE863B /* spir-v */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "spir-v";
+			sourceTree = "<group>";
+		};
+		FFD61453294D083700DE863B /* glsl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = glsl;
+			sourceTree = "<group>";
+		};
+		FFD61455294D091500DE863B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				FFD6145A294D0A1600DE863B /* main.cpp */,
+				FFD61457294D096300DE863B /* mgo_window.cpp */,
+				FFD6145C294DD6A100DE863B /* mgo_instance.cpp */,
+				FFD61462294F89E900DE863B /* mgo_messenger.cpp */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		FFD61456294D091B00DE863B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FFD61458294D096300DE863B /* mgo_window.hpp */,
+				FFD6145D294DD6A100DE863B /* mgo_instance.hpp */,
+				FFD61463294F89E900DE863B /* mgo_messenger.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF56F88C2948031000115F1D /* MangosEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF56F8942948031000115F1D /* Build configuration list for PBXNativeTarget "MangosEngine" */;
+			buildPhases = (
+				FF56F88A2948031000115F1D /* Frameworks */,
+				FF56F88B2948031000115F1D /* CopyFiles */,
+				FF56F8892948031000115F1D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangosEngine;
+			productName = MangosEngine;
+			productReference = FF56F88D2948031000115F1D /* MangosEngine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF56F8852948031000115F1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FF56F88C2948031000115F1D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = FF56F8882948031000115F1D /* Build configuration list for PBXProject "MangosEngine" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF56F8842948031000115F1D;
+			productRefGroup = FF56F88E2948031000115F1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF56F88C2948031000115F1D /* MangosEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF56F8892948031000115F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD6145B294D0A1600DE863B /* main.cpp in Sources */,
+				FFD61459294D096300DE863B /* mgo_window.cpp in Sources */,
+				FFD61465294FCCDF00DE863B /* mgo_instance.cpp in Sources */,
+				FFD61466294FCCE100DE863B /* mgo_messenger.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF56F8922948031000115F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FF56F8932948031000115F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF56F8952948031000115F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = MangosEngine/MangosEngine.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = H3Y29BCYSK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/glfw/3.3.8/lib,
+					"/opt/homebrew/Cellar/vulkan-loader/1.3.237/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF56F8962948031000115F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = MangosEngine/MangosEngine.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = H3Y29BCYSK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/glfw/3.3.8/lib,
+					"/opt/homebrew/Cellar/vulkan-loader/1.3.237/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF56F8882948031000115F1D /* Build configuration list for PBXProject "MangosEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF56F8922948031000115F1D /* Debug */,
+				FF56F8932948031000115F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF56F8942948031000115F1D /* Build configuration list for PBXNativeTarget "MangosEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF56F8952948031000115F1D /* Debug */,
+				FF56F8962948031000115F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF56F8852948031000115F1D /* Project object */;
+}
